@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     "rest_framework.authtoken",
     "drf_spectacular",
-    'travel.apps.TravelConfig'
+    'travel.apps.TravelConfig',
+    'projects.apps.ProjectsConfig'
 ]
 
 REST_FRAMEWORK = {
