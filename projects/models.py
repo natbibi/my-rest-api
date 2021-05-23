@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Project(models.Model):
     name = models.CharField(max_length=50)
-    description = models.CharField(max_length=255)
+    description = models.TextField()
     technologies = models.CharField(max_length=255)
     github = models.CharField(max_length=50)
     netlify = models.CharField(max_length=50)
