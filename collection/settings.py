@@ -29,12 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = [
-    '0.0.0.0'
-    'nat-api.herokuapp.com',
-    'www.nat-api.herokuapp.com',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['nat-api.herokuapp.com','127.0.0.1']
 
 # Application definition
 
