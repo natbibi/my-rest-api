@@ -8,7 +8,7 @@ class Project(models.Model):
     github = models.CharField(max_length=50)
     netlify = models.CharField(max_length=50)
     image = models.CharField(max_length=255)
-    alt = models.CharField(max_length=30)
+    alt = models.CharField(max_length=100)
     display = models.CharField(max_length=10, blank=True, null=True)
 
     def __str__(self):
