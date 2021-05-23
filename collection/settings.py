@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-x770tq^61!jy=d6hi7n!3u!p8fqi!z0z++t0lp%1vvbhd2mzzl
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://nat-api.herokuapp.com/", "'127.0.0.1,localhost,0.0.0.0').split(',')"]
 
 
 # Application definition
