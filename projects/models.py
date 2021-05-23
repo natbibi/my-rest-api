@@ -6,10 +6,10 @@ class Project(models.Model):
     description = models.TextField()
     technologies = models.CharField(max_length=255)
     github = models.CharField(max_length=50)
-    netlify = models.CharField(max_length=50, blank=True, null=False)
+    netlify = models.CharField(max_length=50, blank=True, null=False, default="")
     image = models.CharField(max_length=255)
     alt = models.CharField(max_length=100)
-    display = models.CharField(max_length=10, blank=True, null=False)
+    display = models.CharField(max_length=10, blank=True, null=False, default="")
 
     def __str__(self):
         return self.name
