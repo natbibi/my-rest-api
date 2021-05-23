@@ -32,8 +32,10 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 ALLOWED_HOSTS = [
     '0.0.0.0'
     'nat-api.herokuapp.com',
+    'www.nat-api.herokuapp.com',
     '127.0.0.1'
 ]
+
 # Application definition
 
 INSTALLED_APPS = [
