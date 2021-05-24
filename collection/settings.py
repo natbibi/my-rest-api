@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "drf_spectacular",
     'travel.apps.TravelConfig',
-    'projects.apps.ProjectsConfig'
+    'projects.apps.ProjectsConfig',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -57,6 +58,7 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -158,3 +160,9 @@ DATABASES['default'].update(db_from_env)
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+    "http://0.0.0.0:8080",
+    "https://nat-portfolio.netlify.app"
+]
