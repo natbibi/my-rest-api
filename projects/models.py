@@ -9,7 +9,7 @@ class Project(models.Model):
     netlify = models.CharField(max_length=50) 
     image = models.CharField(max_length=255)
     alt = models.CharField(max_length=100)
-    display = models.CharField(max_length=10, blank=True, null=False, default="")
+    display = models.CharField(max_length=10, blank=True, default="")
 
     def __str__(self):
         return self.name

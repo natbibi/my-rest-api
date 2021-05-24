@@ -13,7 +13,5 @@ class ProjectSerializer(serializers.ModelSerializer):
             "netlify",
             "image",
             "alt",
+            "display",
         ]
-        extra_kwargs = {
-            "display": {"required": False},
-        }
