@@ -10,10 +10,10 @@ class ProjectSerializer(serializers.ModelSerializer):
             "description",
             "technologies",
             "github",
+            "netlify"
             "image",
             "alt",
         ]
         extra_kwargs = {
-            "netlify": {"required": False},
             "display": {"required": False},
         }
