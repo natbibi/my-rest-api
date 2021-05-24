@@ -25,9 +25,9 @@ To start up the server:
 
 <details>
 <summary>Note to self</summary>
-```
+
 To deploy: `git push heroku main`    
 Perform migrations: `heroku run python manage.py makemigrations / migrate` (must migrate locally first and then push)
-```
+
 </details>
 
