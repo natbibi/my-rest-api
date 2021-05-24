@@ -10,7 +10,7 @@ class ProjectSerializer(serializers.ModelSerializer):
             "description",
             "technologies",
             "github",
-            "netlify"
+            "netlify",
             "image",
             "alt",
         ]
