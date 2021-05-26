@@ -175,6 +175,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://nat-portfolio.netlify.app"
 ]
 
+if not DEBUG:
+    EMAIL_HOST_USER = os.environ('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ('EMAIL_HOST_PASSWORD')
+
 # Email settings
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 465
