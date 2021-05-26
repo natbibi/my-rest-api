@@ -14,12 +14,12 @@ from pathlib import Path
 import os
 import environ
 
-# Initialise environment variables
 env = environ.Env(
+    # set casting, default value
     DEBUG=(bool, False)
 )
+# reading .env file
 environ.Env.read_env()
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -174,10 +174,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://0.0.0.0:8080",
     "https://nat-portfolio.netlify.app"
 ]
-
-if not DEBUG:
-    EMAIL_HOST_USER = os.environ('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ('EMAIL_HOST_PASSWORD')
 
 # Email settings
 EMAIL_HOST = "smtp.gmail.com"
