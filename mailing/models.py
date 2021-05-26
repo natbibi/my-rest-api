@@ -1,5 +1,6 @@
 from django.db import models
 from django.dispatch import receiver
+from django.conf import settings
 from django.template.loader import render_to_string 
 from django.core.mail import send_mail
 from django.db.models.signals import post_save
@@ -23,7 +24,7 @@ def new(sender, instance, created, **kwargs):
         send_mail(
             'Just a quick hello 👋🏼', 
             msg, 
-            'natalie.wuwu@googlemail.com',
+            settings.DEFAULT_FROM_EMAIL,
             [instance.email],
             fail_silently=False,
             html_message = render_to_string('index.html', context),

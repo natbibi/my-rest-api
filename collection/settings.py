@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "drf_spectacular",
     'travel.apps.TravelConfig',
     'projects.apps.ProjectsConfig',
-    'mailinglist.apps.MailinglistConfig',
+    'mailing.apps.MailingConfig',
     'corsheaders',
 ]
 
