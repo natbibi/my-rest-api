@@ -172,7 +172,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://0.0.0.0:8080",
-    "https://nat-portfolio.netlify.app"
+    "https://nat-portfolio.netlify.app",
+    "https://nat-travels.netlify.app"
 ]
 
 # Email settings
