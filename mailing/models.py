@@ -23,6 +23,7 @@ def new(sender, instance, created, **kwargs):
 
         send_mail(
             'Just a quick hello 👋🏼', 
+            'This message is automated', 
             settings.DEFAULT_FROM_EMAIL,
             [instance.email],
             fail_silently=False,
