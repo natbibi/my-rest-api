@@ -165,6 +165,8 @@ AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400',}
 
 AWS_PUBLIC_MEDIA_LOCATION = 'media/public'
 AWS_PRIVATE_MEDIA_LOCATION = 'media/private'
+
+DEFAULT_FILE_STORAGE = collection.storages.MediaStore
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
