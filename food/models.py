@@ -18,7 +18,7 @@ class Out(models.Model):
     atmosphere = models.IntegerField(choices = RATING)
     service = models.IntegerField(choices = RATING)
     description = models.TextField()
-    image = models.ImageField(upload_to='images')
+    image = models.ImageField(upload_to='media')
     recommend = models.BooleanField()
 
     def __str__(self):
@@ -28,7 +28,7 @@ class In(models.Model):
     title = models.CharField(max_length=255)
     dish_name = models.CharField(max_length=50)
     description = models.TextField()
-    image = models.ImageField(upload_to='images')
+    image = models.ImageField(upload_to='media')
 
     def __str__(self):
         return self.dish_name
