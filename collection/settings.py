@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'travel.apps.TravelConfig',
     'projects.apps.ProjectsConfig',
     'mailing.apps.MailingConfig',
+    'food.apps.FoodConfig',
     'corsheaders',
 ]
 
