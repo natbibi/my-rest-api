@@ -13,6 +13,7 @@ whitenoise = "*"
 psycopg2-binary = "*"
 django-cors-headers = "*"
 django-environ = "*"
+pillow = "*"
 
 [dev-packages]
 
