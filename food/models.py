@@ -17,6 +17,7 @@ class Out(models.Model):
     taste = models.IntegerField(choices = RATING)
     atmosphere = models.IntegerField(choices = RATING)
     service = models.IntegerField(choices = RATING)
+    date = models.DateField()
     description = models.TextField()
     image = models.ImageField(upload_to='media')
     recommend = models.BooleanField()
@@ -27,6 +28,7 @@ class Out(models.Model):
 class In(models.Model):
     title = models.CharField(max_length=255)
     dish_name = models.CharField(max_length=50)
+    date = models.DateField()
     description = models.TextField()
     image = models.ImageField(upload_to='media')
 

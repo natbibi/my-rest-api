@@ -13,6 +13,7 @@ class OutSerializer(serializers.ModelSerializer):
             "taste",
             "atmosphere",
             "service",
+            "date",
             "description",
             "image",
             "recommend",
@@ -25,6 +26,7 @@ class InSerializer(serializers.ModelSerializer):
             "id",
             "title",
             "dish_name",
+            "date",
             "description",
             "image",
         ]
