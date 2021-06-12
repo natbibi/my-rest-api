@@ -6,6 +6,8 @@ A REST API for my personal projects
 
 /docs to see available endpoints and operations on each endpoint using Swagger 
 
+Using [Kaffeine](http://kaffeine.herokuapp.com/) ☕️ to keep my dyno awake! 
+
 # Installation and Usage
 Navigate to root directory of this repository and open the terminal:   
 
