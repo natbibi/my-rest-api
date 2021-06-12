@@ -189,6 +189,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://0.0.0.0:8080",
     "https://nat-portfolio.netlify.app",
     "https://nat-travels.netlify.app",
+    "https://stesfood.netlify.app",
 ]
 
 # Email settings
