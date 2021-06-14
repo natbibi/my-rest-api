@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'mailing.apps.MailingConfig',
     'food.apps.FoodConfig',
     'corsheaders',
+    'django_filters',
 ]
 
 REST_FRAMEWORK = {
@@ -64,6 +65,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_SCHEMA_CLASS': "drf_spectacular.openapi.AutoSchema",
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
 
 MIDDLEWARE = [
