@@ -1,12 +1,16 @@
 from rest_framework import generics, permissions
 from .models import Out, In
 from .serializers import OutSerializer, InSerializer
+from django_filters.rest_framework import DjangoFilterBackend
 
 # GET, POST
 class OutList(generics.ListCreateAPIView):
     queryset = Out.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = OutSerializer
+    filter_backends = [filters.OrderingFilter]
+    ordering_fields = '__all__'
+    # ordering_fields = ['id', 'date']
 
 # PATCH, DELETE
 class OutDetail(generics.RetrieveUpdateDestroyAPIView):
