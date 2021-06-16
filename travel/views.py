@@ -4,6 +4,11 @@ from .serializers import DestinationSerializer
 
 # GET, POST
 class DestinationList(generics.ListCreateAPIView):
+    """
+    🌍 Returns a list of all travel destinations that I have visited. Check out my [travel blog][ref]!
+
+    [ref]: https://nat-travels.netlify.app/
+    """    
     queryset = Destination.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = DestinationSerializer
