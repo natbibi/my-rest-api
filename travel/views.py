@@ -1,6 +1,11 @@
 from rest_framework import generics, permissions
 from .models import Destination
 from .serializers import DestinationSerializer
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'index.html')
+
 
 # GET, POST
 class DestinationList(generics.ListCreateAPIView):
