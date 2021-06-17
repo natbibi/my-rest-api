@@ -6,9 +6,7 @@ from drf_spectacular.utils import extend_schema
 # GET, POST
 class ProjectList(generics.ListCreateAPIView):
     """
-    👩🏻‍💻 Returns a list of my best coding projects. Check out my [portfolio][ref]!
-
-    [ref]: https://nat-portfolio.netlify.app/
+    👩🏻‍💻 Returns a list of my best coding projects. Check out my portfolio at: https://nat-portfolio.netlify.app/
     """    
     queryset = Project.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]

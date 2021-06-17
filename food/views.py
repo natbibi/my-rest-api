@@ -15,12 +15,18 @@ class OutList(generics.ListCreateAPIView):
 
 # PATCH, DELETE
 class OutDetail(generics.RetrieveUpdateDestroyAPIView):
+    """
+    🍤 Returns a list of my Ste's dining experiences at restaurants. Find his food blog at: https://stesfood.netlify.app/
+    """   
     queryset = Out.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = OutSerializer
 
 # GET, POST
 class InList(generics.ListCreateAPIView):
+    """
+    🍤 Returns a list of my Ste's home cooking. Find his food blog at: https://stesfood.netlify.app/
+    """   
     queryset = In.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = InSerializer
