@@ -6,6 +6,9 @@ from django_filters.rest_framework import DjangoFilterBackend, FilterSet
 
 # GET, POST
 class OutList(generics.ListCreateAPIView):
+    """
+    🍤 Returns a list of my Ste's dining experiences at restaurants. Find his food blog at: https://stesfood.netlify.app/
+    """   
     queryset = Out.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = OutSerializer
@@ -15,9 +18,6 @@ class OutList(generics.ListCreateAPIView):
 
 # PATCH, DELETE
 class OutDetail(generics.RetrieveUpdateDestroyAPIView):
-    """
-    🍤 Returns a list of my Ste's dining experiences at restaurants. Find his food blog at: https://stesfood.netlify.app/
-    """   
     queryset = Out.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = OutSerializer
