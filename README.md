@@ -24,12 +24,13 @@ To start up the server:
 5. Add auth to routes - allow read only unless auth'd
 6. Setup up for deployment and deploy!
 
-
 <details>
 <summary>Note to self</summary>
 
 To deploy: `git push heroku main`    
 Perform migrations: `heroku run python manage.py makemigrations / migrate` (must migrate locally first and then push)
+
+🚧 food: add option to upload multiple images to a post 🚧
 
 </details>
 
