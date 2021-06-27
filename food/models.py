@@ -30,7 +30,7 @@ class OutImage(models.Model):
     image = models.ImageField(upload_to='media')
 
     def __str__(self):
-        return self.out.restaurant_name
+        return self.image.url
 
 class In(models.Model):
     title = models.CharField(max_length=255)

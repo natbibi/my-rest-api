@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Out, OutImage, In
 
 class OutSerializer(serializers.ModelSerializer):
+    more_images = serializers.StringRelatedField(many=True)
 
     class Meta: 
         model = Out
