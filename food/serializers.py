@@ -1,7 +1,8 @@
 from rest_framework import serializers
-from .models import Out, In
+from .models import Out, OutImage, In
 
 class OutSerializer(serializers.ModelSerializer):
+
     class Meta: 
         model = Out
         fields = [
@@ -16,6 +17,7 @@ class OutSerializer(serializers.ModelSerializer):
             "date",
             "description",
             "image",
+            "more_images",
             "recommend",
         ]
 

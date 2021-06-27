@@ -25,6 +25,13 @@ class Out(models.Model):
     def __str__(self):
         return self.restaurant_name
 
+class OutImage(models.Model):
+    out = models.ForeignKey(Out, related_name='more_images', default=None, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='media')
+
+    def __str__(self):
+        return self.out.restaurant_name
+
 class In(models.Model):
     title = models.CharField(max_length=255)
     dish_name = models.CharField(max_length=50)
